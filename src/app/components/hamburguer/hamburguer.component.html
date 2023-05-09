@@ -1,6 +1,6 @@
-<label [ngClass]="{ checked: true }">
+<label [ngClass]="{ checked: open }">
     <div class="menu-hamb">
-      <span class="hamburguer"></span>
+      <span class="hamburguer" (click)="open = !open"></span>
     </div>
   </label>
   <ul class="ul-mbl">
